@@ -8,13 +8,13 @@ const NoPage = () => {
         {/* Replace the video ID below with your own YouTube video */}
         <iframe
           className="h-full w-full"
-          src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
+          src="https://www.youtube.com/embed/Ccaz3yJhaVA?autoplay=1&loop=1&playlist=Ccaz3yJhaVA"
           title="YouTube video"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         />
       </div>
-      <p className="mt-6 text-muted-foreground">Go back and choose wisely next time 💘</p>
+      <p className="mt-6 text-muted-foreground">Go <a href="/" className="text-primary underline hover:text-primary/90">back</a> and choose wisely next time 💘</p>
     </div>
   );
 };
