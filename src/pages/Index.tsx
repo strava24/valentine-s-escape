@@ -1,6 +1,7 @@
 import { useState, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { useIsMobile } from "@/hooks/use-mobile";
 import couple1 from "@/assets/image_1.jpeg";
 import couple2 from "@/assets/image_2.jpeg";
 import couple3 from "@/assets/image_3.jpeg";
@@ -11,16 +12,33 @@ import couple6 from "@/assets/image_6.jpeg";
 const images = [couple1, couple2, couple3, couple4, couple5, couple6];
 
 const Index = () => {
+  const isMobile = useIsMobile();
   const navigate = useNavigate();
   const [yesPos, setYesPos] = useState({ x: 0, y: 0 });
   const [hasMoved, setHasMoved] = useState(false);
 
   const fleeButton = useCallback(() => {
-    const x = Math.random() * 60 - 30; // -30vw to 30vw
-    const y = Math.random() * 50 - 25; // -25vh to 25vh
+    const x = Math.random() * 60 - 30;
+    const y = Math.random() * 50 - 25;
     setYesPos({ x, y });
     setHasMoved(true);
   }, []);
+
+  if (isMobile) {
+    return (
+      <div className="flex min-h-screen flex-col items-center justify-center bg-background px-6 text-center">
+        <span className="mb-6 text-6xl">💻</span>
+        <h1 className="mb-4 text-3xl font-bold italic text-primary">
+          Hold on!
+        </h1>
+        <p className="text-lg text-muted-foreground">
+          Please open this link on a laptop or desktop for the full experience 💕
+        </p>
+      </div>
+    );
+  }
+
+
 
   return (
     <div className="relative min-h-screen overflow-hidden bg-background">
