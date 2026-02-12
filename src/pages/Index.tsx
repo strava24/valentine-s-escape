@@ -86,7 +86,7 @@ const Index = () => {
               }}
               onMouseEnter={fleeButton}
               onTouchStart={fleeButton}
-              onClick={fleeButton}
+              onClick={() => navigate("/yes")}
             >
               Yes 💕
             </Button>
