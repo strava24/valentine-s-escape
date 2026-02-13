@@ -6,7 +6,7 @@ const YesPage = () => {
       <ScrollArea className="h-screen">
         <div className="mx-auto max-w-3xl px-6 py-16 sm:px-10 sm:py-24">
           <h1 className="mb-2 text-center text-4xl font-bold italic text-primary sm:text-6xl">
-            You said Yes! 💕
+            Right answer! 💕
           </h1>
           <p className="mb-12 text-center text-lg text-muted-foreground">
             Here's something I wanted to tell you…
