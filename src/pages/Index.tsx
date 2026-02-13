@@ -87,7 +87,7 @@ const Index = () => {
 
           {/* Placeholder line — edit this later */}
           <p className="mb-10 text-lg text-muted-foreground sm:text-xl">
-            Your special message goes here ✨
+            A message awaits Leah — if you're persistent enough to read it✨
           </p>
 
           <div className="flex items-center justify-center gap-6">
