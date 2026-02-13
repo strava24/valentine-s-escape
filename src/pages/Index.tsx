@@ -32,7 +32,7 @@ const Index = () => {
           Hold on!
         </h1>
         <p className="text-lg text-muted-foreground">
-          Please open this link on a laptop or desktop for the full experience 💕
+          Poi laptop la thora d!!
         </p>
       </div>
     );
